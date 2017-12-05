@@ -1,0 +1,29 @@
+{
+    "name": "jovelasquez/cakephp-custom-fields",
+    "description": "Custom Fields from database plugin for CakePHP",
+    "keywords": ["CakePHP", "Custom Fields", "Form"],
+    "license": "MIT",
+    "type": "cakephp-plugin",
+    "require": {
+        "php": ">=5.5.9",
+        "cakephp/cakephp": "^3.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7|^6.0",
+        "cakephp/cakephp-codesniffer": "~2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "CustomFields\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CustomFields\\Test\\": "tests",
+            "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
+        }
+    },
+    "extra": {
+        "installer-name": "CustomFields"
+    }
+}
