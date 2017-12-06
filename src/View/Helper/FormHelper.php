@@ -577,10 +577,9 @@ class FormHelper extends \Cake\View\Helper\FormHelper {
      *
      * @link http://book.cakephp.org/3.0/en/views/helpers/form.html#creating-button-elements
      */
-    public function button($title, array $options = []) {
-        return $this->_easyIcon('parent::button', $title,
-                                $this->_addButtonClasses($options));
-    }
+    // public function button($title, array $options = []) {
+    //     return $this->_easyIcon('parent::button', $title, $this->_addButtonClasses($options));
+    // }
 
     /**
      * Creates a button group using the given buttons.
