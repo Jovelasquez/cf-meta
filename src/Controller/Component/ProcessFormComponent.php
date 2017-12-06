@@ -110,6 +110,13 @@ class ProcessFormComponent extends Component
                         'required' => $field['is_required'],
                         
                     ], Hash::extract($attrs, 'properties')); 
+
+                    if($fields[$key]['attributes']['type'] === 'select'){
+                        if(isset($field['possible_values']) && !empty($field['possible_values'])){
+                            $fields[$key]['attributes']['empty'] = $field['name'];
+                            $fields[$key]['attributes']['options'] = self::jsonToArray($field['possible_values']);
+                        }
+                    }
                     
                     //Functions
                     if(Hash::check($attrs, 'function')){
