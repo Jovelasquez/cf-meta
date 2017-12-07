@@ -51,7 +51,6 @@ class ProcessFormComponent extends Component
 
         $setting = $this->_getSettingModel($config->custom_model, $config->custom_foreign_key);
         $setting = $this->_getAttributes($setting);
-        //$setting = $this->_generateStructure($setting);
         return $setting;
     }
     
@@ -138,7 +137,7 @@ class ProcessFormComponent extends Component
                 }
             }
         }
-//debug($fields);
+
         return $fields;
     }
 
